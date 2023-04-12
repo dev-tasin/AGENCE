@@ -1,0 +1,559 @@
+/* ======COMMON CSS START===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+html, body{
+  scroll-behavior: unset !important;
+}
+/* ======COMMON CSS END===== */
+/* ======NAVBAR CSS START===== */
+
+.menu{
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  animation: tasin 3s;
+}
+@keyframes tasin{
+  form{
+    top: -100px;
+    background: #000000;
+  }
+  to{
+    top: 0;
+  }
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  padding-bottom: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  transition: all linear 0.5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #4756df;
+}
+.btn button {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+.contact-btn {
+  background: #6a4df4;
+  border: none;
+  padding: 15px 42px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+/* ======NAVBAR CSS END===== */
+/* ======BANNER CSS START===== */
+.banner {
+  background: url(../images/agenc-Banner\ 1banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 315px 0 175px 0;
+  position: relative;
+  z-index: 1;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.banner-img-2{
+  background: #000;
+}
+.banner-img-3{
+  background: #e30c0c;
+}
+.banner-img-4{
+  background: #0ce329;
+}
+.banner-text {
+  color: #ffff;
+}
+.banner-text h2 {
+  font-size: 81px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.banner-text p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 640px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.banner-btn {
+  margin: 0 auto;
+  width: 200px;
+  background: #6a4df4;
+  border: none;
+  padding: 15px 42px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.slick-dots{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.slick-dots li{
+  display: inline-block;
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #4756DF;
+}
+.slick-dots li button{
+  color: transparent;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid #fff;
+  opacity: 0;
+}
+.slick-dots li.slick-active button{
+  opacity: 1;
+}
+/* ======BANNER CSS END===== */
+/* ======OUR SUCCESS PART CSS START===== */
+#our-success {
+  padding-top: 170px;
+  padding-bottom: 150px;
+}
+.success-part {
+  background: #e0fff9;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  border-radius: 8px;
+}
+.cuccess-left {
+  padding-left: 50px;
+}
+.cuccess-left h4 {
+  font-size: 25px;
+  color: #6a4df4;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.cuccess-left h3 {
+  font-size: 35px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.right-item h3 {
+  font-size: 50px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.right-item p {
+  font-size: 20px;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+/* ======OUR SUCCESS PART CSS END===== */
+/* ======SERVICES CSS START===== */
+#services {
+  padding-bottom: 150px;
+}
+.common-text h4 {
+  font-size: 45px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.common-text p {
+  font-size: 16px;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 630px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.services-item {
+  padding: 80px 50px 50px 50px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  transition: all linear 0.5s;
+}
+.services-text h2 {
+  font-size: 25px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.services-text p {
+  font-size: 16px;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.services-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* ======SERVICES CSS END===== */
+/* ======RECENT WORK CSS START===== */
+#recent-work {
+  background: #f3f3f3;
+  padding: 150px 0;
+}
+.work-item {
+  width: 424px;
+  background: #ffffff;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+.work-img img {
+  border-radius: 20px;
+}
+.work-text h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.work-text p {
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 340px;
+  line-height: 24px;
+}
+/* ======RECENT WORK CSS END===== */
+/* ======AGENC WORK CSS START===== */
+#agenc {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.common-text-agenc p {
+  font-size: 16px;
+  color: #737373;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.common-text-agenc h4 {
+  font-size: 45px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.agenc-part {
+  width: 70%;
+}
+.agenc-part2 {
+  width: 30%;
+}
+.agenc-part-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.agenc-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.agenc-left {
+  width: 50%;
+  margin-right: 110px;
+}
+.agenc-text h3 {
+  padding-top: 20px;
+  font-size: 25px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.agenc-text p {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* ======AGENC WORK CSS END===== */
+/* ======REVIEWS CSS START===== */
+#reviews {
+  padding-bottom: 227px;
+}
+.reviews-item {
+  padding: 54px 58px;
+  color: #f4efef;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.reviews-top-img p {
+  color: #7b7b7b;
+  padding-top: 20px;
+}
+.star {
+  color: #f9bd2c;
+}
+.reviews-footer-text h3 {
+  font-size: 20px;
+  color: #232323;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.reviews-footer-text p {
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.reviews-footer-text {
+  padding-top: 20px;
+}
+.review-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.left {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #4756df;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  z-index: 999;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #4756df;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.reviews-item.slick-center {
+  background: #f4efef;
+  transition: all linear 0.5s;
+}
+/* ======REVIEWS CSS END===== */
+/* ======DEVELOPNEMT CSS START===== */
+#development {
+  padding: 150px 0;
+  background: #f3f3f3;
+}
+.we-do{
+  padding-top: 90px;
+}
+.we-do h2 {
+  width: 470px;
+  font-size: 45px;
+  color: #151515;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.we-do p {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 520px;
+}
+
+
+.form {
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 400px;
+}
+
+.title {
+  color: #151515;
+  font-size: 25px;
+  font-weight: bold;
+  /* margin-top: 30px; */
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 50px;
+}
+
+.ic2 {
+  margin-top: 50px;
+}
+
+.input {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+label {
+  display: inline;
+}
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+ outline: 0;
+  text-align: center;
+  width: 100%;
+}
+.padding{
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.submit:active {
+  background-color: #06b;
+}
+
+/* ======DEVELOPNEMT CSS END===== */
+/* ======FOOTER CSS START===== */
+#footer-part {
+  padding-top: 150px;
+}
+#footer-part .container{
+  
+  position: relative;
+}
+.footer-line {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  height: 2px;
+  width: 100%;
+  background: #E8E8E8;
+  z-index: 999;
+}
+.footer-img p {
+  padding-top: 30px;
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.footer-text ul {
+  text-align: start;
+  padding-top: 20px;
+}
+.footer-text ul li {
+  text-align: left;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+ol, ul {
+  padding-left: 0;
+}
+/* .wrapper{
+  display: flex;
+  justify-content: space-between;
+} */
+.copyright{
+  text-align: center;
+  padding-top: 20px;
+}
+.copyright h5{
+  font-size: 16px;
+  color: #7b7b7b;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* ======FOOTER CSS END===== */
+
+
+.top-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: red;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
